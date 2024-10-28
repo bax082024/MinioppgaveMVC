@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniOppgaveMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9414fa67a307b26b8fabb61dd129b48b9a39c358")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c09158a3be74f89a2331bc363f6e7e2c580f5809")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniOppgaveMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniOppgaveMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
