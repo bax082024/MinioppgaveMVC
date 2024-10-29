@@ -2,12 +2,86 @@ using System;
 using System.Collections.Generic;
 using Vegetables.Views;
 using Vegetables.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Vegetables.Controllers
 {
   public class Controller
   {
     private List<Vegetables> _vegetableList;
-    private View = _view;
+    private View _view;
+
+    public Controller(View view)
+    {
+      _vegetableList = new List<Vegetables>();
+      _view = view;
+    }
+
+    public void Run()
+    {
+      bool isRunning = true;
+
+      while (isRunning)
+      {
+        _view.ShowMenu();
+        var input = Console.ReadLine();
+
+        switch (input)
+        {
+          case "1":
+            ViewVegetables();
+            break;
+          case"2":
+            AddVegetable();
+            break;
+          case"3":
+            UpdateVegetable();
+          case"4":
+            DeleteVegetable();
+          case"5":
+            isRunning = false;
+            Console.WriteLine("Exiting.");
+            break;
+          default:
+            Console.WriteLine("Invalid choice, try again.");
+            break;
+        }
+      }
+    }
+
+    private void ViewVegetables()
+    {
+      if (_vegetableList.Count == 0)
+      {
+        _view.Display("No vegetables to display");
+    
+      }
+      else
+      {
+        foreach (var vegetable in _vegetableList)
+        {
+          _view.Display(vegetable.GetInfo());
+        }
+      }
+    }
+
+
+    private void AddVegetable()
+    {
+      Console.WriteLine("Enter vegeable name:");
+      string name = Console.ReadLine();
+
+      Console.WriteLine("Enter vegetable price:");
+
+      _vegetableList.Add(new Vegetables { Name = name, Price = price });;
+      _viewDisplay("Vegetable added successfully!");
+    }
+
+    public void UpdateVegetable()
+    {
+      Console.WriteLine("Enter vegetable name you want to update"):
+      string name = Console.ReadLine();
+    }
   }
+
 }
