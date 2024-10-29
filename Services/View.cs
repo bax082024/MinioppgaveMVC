@@ -12,10 +12,11 @@ namespace Vegetables.Views
     public void ShowMenu()
     {
       Console.WriteLine("Choose an option:");
-      Console.WriteLine("View Vegetables");
-      Console.WriteLine("Add Vegetable");
-      Console.WriteLine("Update Vegetable");
-      Console.WriteLine("Delete Vegetable");
+      Console.WriteLine("1. View Vegetables");
+      Console.WriteLine("2. Add Vegetable");
+      Console.WriteLine("3. Update Vegetable");
+      Console.WriteLine("4. Delete Vegetable");
+      Console.WriteLine("5. Exit");
       
     }
   }

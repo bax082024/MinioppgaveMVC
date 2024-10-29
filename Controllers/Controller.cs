@@ -8,12 +8,12 @@ namespace Vegetables.Controllers
 {
   public class Controller
   {
-    private List<Vegetables> _vegetableList;
+    private List<Vegetable> _vegetableList;
     private View _view;
 
     public Controller(View view)
     {
-      _vegetableList = new List<Vegetables>();
+      _vegetableList = new List<Vegetable>();
       _view = view;
     }
 
@@ -36,8 +36,10 @@ namespace Vegetables.Controllers
             break;
           case"3":
             UpdateVegetable();
+            break;
           case"4":
             DeleteVegetable();
+            break;
           case"5":
             isRunning = false;
             Console.WriteLine("Exiting.");
@@ -68,21 +70,22 @@ namespace Vegetables.Controllers
 
     private void AddVegetable()
     {
-      Console.WriteLine("Enter vegeable name:");
-      string name = Console.ReadLine();
+      Console.WriteLine("Enter vegetable name:");
+    string? name = Console.ReadLine();
 
-      Console.WriteLine("Enter vegetable price:");
+    Console.WriteLine("Enter vegetable price:");
+    string? price = Console.ReadLine();
 
-      _vegetableList.Add(new Vegetables { Name = name, Price = price });;
-      _viewDisplay("Vegetable added successfully!");
+    _vegetableList.Add(new Vegetable { Name = name, Price = price });
+    _view.Display("Vegetable added successfully!");
     }
 
     public void UpdateVegetable()
     {
       Console.WriteLine("Enter vegetable name you want to update");
-      string name = Console.ReadLine();
+      string? name = Console.ReadLine();
 
-      var vegetable = _vegetableList.Find(v => v.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+      var vegetable = _vegetableList.Find(v => v.Name?.Equals(name, StringComparison.OrdinalIgnoreCase) == true);
 
       if (vegetable != null)
       {
@@ -98,19 +101,19 @@ namespace Vegetables.Controllers
 
     private void DeleteVegetable()
     {
-      Console.WriteLine("Enter vegetable you want to delete");
-      string name = Console.ReadLine();
+      Console.WriteLine("Enter vegetable you want to delete:");
+      string? name = Console.ReadLine();
 
-      var vegeable = _vegetableList.Find(v => v.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+      var vegetable = _vegetableList.Find(v => v.Name?.Equals(name, StringComparison.OrdinalIgnoreCase) == true);
 
-      if (Vegetables != null)
+      if (vegetable != null)
       {
-        _vegetableList.Remove(vegetable);
-        _view.Display("Vegetable deleted successfully.");
+          _vegetableList.Remove(vegetable);
+          _view.Display("Vegetable deleted successfully.");
       }
       else
       {
-        _view.Display("Vegetable not found");
+          _view.Display("Vegetable not found.");
       }
     }
   }

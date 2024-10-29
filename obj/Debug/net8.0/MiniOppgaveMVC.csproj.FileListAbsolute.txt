@@ -1,0 +1,15 @@
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\bin\Debug\net8.0\MiniOppgaveMVC.exe
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\bin\Debug\net8.0\MiniOppgaveMVC.deps.json
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\bin\Debug\net8.0\MiniOppgaveMVC.runtimeconfig.json
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\bin\Debug\net8.0\MiniOppgaveMVC.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\bin\Debug\net8.0\MiniOppgaveMVC.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.AssemblyInfoInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.AssemblyInfo.cs
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.csproj.CoreCompileInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.sourcelink.json
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\refint\MiniOppgaveMVC.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\MiniOppgaveMVC.genruntimeconfig.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\MiniOppgaveMVC\obj\Debug\net8.0\ref\MiniOppgaveMVC.dll
