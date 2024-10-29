@@ -79,8 +79,39 @@ namespace Vegetables.Controllers
 
     public void UpdateVegetable()
     {
-      Console.WriteLine("Enter vegetable name you want to update"):
+      Console.WriteLine("Enter vegetable name you want to update");
       string name = Console.ReadLine();
+
+      var vegetable = _vegetableList.Find(v => v.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+      if (vegetable != null)
+      {
+        Console.WriteLine("Enter new price");
+        vegetable.Price = Console.ReadLine();
+        _view.Display("Vegetable updated successfully");
+      }
+      else
+      {
+        _view.Display("Vegetable not found");
+      }
+    }
+
+    private void DeleteVegetable()
+    {
+      Console.WriteLine("Enter vegetable you want to delete");
+      string name = Console.ReadLine();
+
+      var vegeable = _vegetableList.Find(v => v.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+
+      if (Vegetables != null)
+      {
+        _vegetableList.Remove(vegetable);
+        _view.Display("Vegetable deleted successfully.");
+      }
+      else
+      {
+        _view.Display("Vegetable not found");
+      }
     }
   }
 
